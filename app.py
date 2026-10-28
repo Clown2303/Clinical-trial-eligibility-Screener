@@ -20,6 +20,49 @@ def fake_check_patient(patient, trial):
 
 
 st.set_page_config(page_title="Trial Eligibility Screener", page_icon="🩺", layout="wide")
+dark_mode = st.sidebar.toggle("Dark mode", value=False)
+dark_theme_css = """
+<style>
+:root {
+  --ink: #e4eef2;
+  --muted: #a8bdc7;
+  --teal: #58c6c1;
+  --teal-dark: #30aaa8;
+  --line: #2b4654;
+  --paper: #142a36;
+}
+html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"],
+[data-testid="stSidebar"], [data-testid="stBottom"] {
+  background-color: #0b1520 !important;
+  color: #e4eef2 !important;
+}
+[data-testid="stAppViewContainer"] {
+  background: radial-gradient(ellipse at 50% -18%, #153a43 0, transparent 48%), #0b1520 !important;
+}
+[data-testid="stSidebar"] { border-right: 1px solid #223a47; }
+[data-testid="stHeader"] { background: transparent !important; }
+h1, h2, h3, p, label, [data-testid="stMarkdownContainer"],
+[data-testid="stWidgetLabel"] p, [data-testid="stCaptionContainer"] {
+  color: #e4eef2 !important;
+}
+.section-label, [data-testid="stSelectbox"] label { color: #b0c5ce !important; }
+.hero { background: linear-gradient(120deg, #0a2435 0%, #10404d 58%, #086b75 100%); }
+[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+  background: #142a36 !important; border-color: #35515e !important; color: #e4eef2 !important;
+}
+[data-testid="stSelectbox"] [data-baseweb="select"] * { color: #e4eef2 !important; }
+[data-baseweb="popover"], [role="listbox"], [role="option"] {
+  background: #142a36 !important; color: #e4eef2 !important;
+}
+[role="option"]:hover { background: #20414e !important; }
+div.stButton > button { color: #06232b !important; background: linear-gradient(100deg, #58c6c1, #38aaa9) !important; }
+.result-card, .criterion-row { background: #142a36 !important; border-color: #2b4654 !important; }
+.result-title, .criterion-text, .subhead { color: #e4eef2 !important; }
+.result-kicker, .criterion-value, .footnote { color: #a8bdc7 !important; }
+.explanation { color: #d5e5e9 !important; background: #17343e !important; border-left-color: #58c6c1 !important; }
+.criterion-icon { color: #58c6c1 !important; }
+</style>
+""" if dark_mode else ""
 st.markdown(
     """
     <style>
@@ -84,7 +127,7 @@ st.markdown(
       padding: .8rem 1rem; margin: .5rem 0; box-shadow: 0 3px 10px rgba(25,55,65,.025);
       animation: enter 450ms ease-out both;
     }
-    .criterion-icon { font-size: 1.1rem; text-align: center; }
+    .criterion-icon { color: #087f8c; font-size: 1.55rem; line-height: 1; text-align: center; }
     .criterion-text { color: #203c4b; font-weight: 650; }
     .criterion-value { color: #536b78; font-size: .87rem; text-align: right; overflow-wrap: anywhere; }
     .explanation {
@@ -108,7 +151,7 @@ st.markdown(
       *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
     }
     </style>
-    """,
+    """ + dark_theme_css,
     unsafe_allow_html=True,
 )
 
@@ -165,7 +208,7 @@ if screening and (screening["patient_id"], screening["trial_id"]) == (
         criterion_text = html.escape(str(criterion.get("text", criterion.get("id", "Criterion"))))
         value_text = html.escape(value_text)
         st.markdown(
-            '<div class="criterion-row"><span class="criterion-icon">❓</span>'
+            '<div class="criterion-row"><span class="criterion-icon">•</span>'
             f'<span class="criterion-text">{criterion_text}</span>'
             f'<span class="criterion-value">Patient value: {value_text}</span></div>',
             unsafe_allow_html=True,
