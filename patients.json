@@ -323,4 +323,330 @@
       "T3": "Not eligible"
     }
   }
+  [
+  {
+    "id": "P16",
+    "age": 45,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes"
+    ],
+    "hba1c": 7.5,
+    "bmi": 28.0,
+    "systolic_bp": 125,
+    "pregnant": false,
+    "medications": [
+      "metformin"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P17",
+    "age": 62,
+    "sex": "M",
+    "diagnoses": [
+      "type 2 diabetes",
+      "hypertension"
+    ],
+    "hba1c": 8.4,
+    "bmi": 31.5,
+    "systolic_bp": 148,
+    "pregnant": false,
+    "medications": [
+      "metformin",
+      "amlodipine"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Eligible",
+      "T2": "Eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P18",
+    "age": 34,
+    "sex": "F",
+    "diagnoses": [],
+    "hba1c": 5.2,
+    "bmi": 22.5,
+    "systolic_bp": 112,
+    "pregnant": false,
+    "medications": [],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P19",
+    "age": 57,
+    "sex": "M",
+    "diagnoses": [
+      "type 2 diabetes"
+    ],
+    "hba1c": 8.0,
+    "bmi": 33.2,
+    "systolic_bp": 132,
+    "pregnant": false,
+    "medications": [
+      "metformin",
+      "glipizide"
+    ],
+    "conditions": [
+      "obesity"
+    ],
+    "correct_answers": {
+      "T1": "Eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P20",
+    "age": 71,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension"
+    ],
+    "hba1c": 5.8,
+    "bmi": 29.4,
+    "systolic_bp": 158,
+    "pregnant": false,
+    "medications": [
+      "losartan"
+    ],
+    "conditions": [
+      "heart disease"
+    ],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P21",
+    "age": 28,
+    "sex": "M",
+    "diagnoses": [
+      "asthma"
+    ],
+    "hba1c": 5.1,
+    "bmi": 24.2,
+    "systolic_bp": 118,
+    "pregnant": false,
+    "medications": [
+      "salbutamol"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Eligible"
+    }
+  },
+  {
+    "id": "P22",
+    "age": 49,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "hypertension"
+    ],
+    "hba1c": 9.1,
+    "bmi": 30.8,
+    "systolic_bp": 150,
+    "pregnant": false,
+    "medications": [
+      "metformin",
+      "lisinopril"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Eligible",
+      "T2": "Eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P23",
+    "age": 53,
+    "sex": "M",
+    "diagnoses": [
+      "hyperlipidemia"
+    ],
+    "hba1c": 5.6,
+    "bmi": 26.4,
+    "systolic_bp": 124,
+    "pregnant": false,
+    "medications": [
+      "atorvastatin"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P24",
+    "age": 39,
+    "sex": "F",
+    "diagnoses": [
+      "hypothyroidism"
+    ],
+    "hba1c": 5.4,
+    "bmi": 25.1,
+    "systolic_bp": 116,
+    "pregnant": false,
+    "medications": [
+      "levothyroxine"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P25",
+    "age": 66,
+    "sex": "M",
+    "diagnoses": [
+      "chronic kidney disease"
+    ],
+    "hba1c": 5.9,
+    "bmi": 27.8,
+    "systolic_bp": 142,
+    "pregnant": false,
+    "medications": [],
+    "conditions": [
+      "chronic kidney disease"
+    ],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P26",
+    "age": 31,
+    "sex": "F",
+    "diagnoses": [],
+    "hba1c": 5.0,
+    "bmi": 21.8,
+    "systolic_bp": 110,
+    "pregnant": false,
+    "medications": [],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P27",
+    "age": 58,
+    "sex": "M",
+    "diagnoses": [
+      "type 2 diabetes",
+      "hypertension"
+    ],
+    "hba1c": 9.4,
+    "bmi": 35.1,
+    "systolic_bp": 162,
+    "pregnant": false,
+    "medications": [
+      "insulin",
+      "amlodipine"
+    ],
+    "conditions": [
+      "obesity"
+    ],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P28",
+    "age": 43,
+    "sex": "F",
+    "diagnoses": [
+      "asthma"
+    ],
+    "hba1c": 5.3,
+    "bmi": 26.1,
+    "systolic_bp": 121,
+    "pregnant": false,
+    "medications": [
+      "salbutamol"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Eligible"
+    }
+  },
+  {
+    "id": "P29",
+    "age": 75,
+    "sex": "M",
+    "diagnoses": [
+      "type 2 diabetes",
+      "hypertension"
+    ],
+    "hba1c": 8.7,
+    "bmi": 29.7,
+    "systolic_bp": 156,
+    "pregnant": false,
+    "medications": [
+      "metformin",
+      "losartan"
+    ],
+    "conditions": [
+      "heart disease"
+    ],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Eligible",
+      "T3": "Not eligible"
+    }
+  },
+  {
+    "id": "P30",
+    "age": 51,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes"
+    ],
+    "hba1c": 6.8,
+    "bmi": 27.3,
+    "systolic_bp": 126,
+    "pregnant": false,
+    "medications": [
+      "metformin"
+    ],
+    "conditions": [],
+    "correct_answers": {
+      "T1": "Not eligible",
+      "T2": "Not eligible",
+      "T3": "Not eligible"
+    }
+  }
 ]
+
