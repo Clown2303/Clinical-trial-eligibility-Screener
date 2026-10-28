@@ -1,0 +1,174 @@
+[
+  {
+    "trial_id": "T1",
+    "name": "Type 2 Diabetes",
+    "criteria": [
+      {
+        "id": "C1",
+        "field": "age",
+        "operator": ">=",
+        "value": 18,
+        "text": "Age 18 or older"
+      },
+      {
+        "id": "C2",
+        "field": "age",
+        "operator": "<=",
+        "value": 65,
+        "text": "Age 65 or younger"
+      },
+      {
+        "id": "C3",
+        "field": "diagnoses",
+        "operator": "contains",
+        "value": "type 2 diabetes",
+        "text": "Diagnosis of type 2 diabetes"
+      },
+      {
+        "id": "C4",
+        "field": "hba1c",
+        "operator": ">=",
+        "value": 7.0,
+        "text": "HbA1c at least 7.0"
+      },
+      {
+        "id": "C5",
+        "field": "hba1c",
+        "operator": "<=",
+        "value": 10.5,
+        "text": "HbA1c at most 10.5"
+      },
+      {
+        "id": "C6",
+        "field": "pregnant",
+        "operator": "==",
+        "value": false,
+        "text": "Not pregnant"
+      },
+      {
+        "id": "C7",
+        "field": "medications",
+        "operator": "not_contains",
+        "value": "insulin",
+        "text": "Not taking insulin"
+      },
+      {
+        "id": "C8",
+        "field": "conditions",
+        "operator": "not_contains",
+        "value": "kidney disease",
+        "text": "No kidney disease"
+      }
+    ]
+  },
+  {
+    "trial_id": "T2",
+    "name": "Hypertension",
+    "criteria": [
+      {
+        "id": "C1",
+        "field": "age",
+        "operator": ">=",
+        "value": 30,
+        "text": "Age 30 or older"
+      },
+      {
+        "id": "C2",
+        "field": "age",
+        "operator": "<=",
+        "value": 75,
+        "text": "Age 75 or younger"
+      },
+      {
+        "id": "C3",
+        "field": "diagnoses",
+        "operator": "contains",
+        "value": "hypertension",
+        "text": "Diagnosis of hypertension"
+      },
+      {
+        "id": "C4",
+        "field": "systolic_bp",
+        "operator": ">=",
+        "value": 140,
+        "text": "Systolic BP at least 140"
+      },
+      {
+        "id": "C5",
+        "field": "conditions",
+        "operator": "not_contains",
+        "value": "heart failure",
+        "text": "No heart failure"
+      },
+      {
+        "id": "C6",
+        "field": "pregnant",
+        "operator": "==",
+        "value": false,
+        "text": "Not pregnant"
+      },
+      {
+        "id": "C7",
+        "field": "medications",
+        "operator": "not_contains",
+        "value": "warfarin",
+        "text": "Not taking warfarin"
+      }
+    ]
+  },
+  {
+    "trial_id": "T3",
+    "name": "Asthma",
+    "criteria": [
+      {
+        "id": "C1",
+        "field": "age",
+        "operator": ">=",
+        "value": 18,
+        "text": "Age 18 or older"
+      },
+      {
+        "id": "C2",
+        "field": "age",
+        "operator": "<=",
+        "value": 60,
+        "text": "Age 60 or younger"
+      },
+      {
+        "id": "C3",
+        "field": "diagnoses",
+        "operator": "contains",
+        "value": "asthma",
+        "text": "Diagnosis of asthma"
+      },
+      {
+        "id": "C4",
+        "field": "conditions",
+        "operator": "not_contains",
+        "value": "COPD",
+        "text": "No COPD"
+      },
+      {
+        "id": "C5",
+        "field": "medications",
+        "operator": "not_contains",
+        "value": "oral steroids",
+        "text": "Not taking oral steroids"
+      },
+      {
+        "id": "C6",
+        "field": "pregnant",
+        "operator": "==",
+        "value": false,
+        "text": "Not pregnant"
+      },
+      {
+        "id": "C7",
+        "field": "bmi",
+        "operator": "<",
+        "value": 40,
+        "text": "BMI under 40"
+      }
+    ]
+  }
+]
